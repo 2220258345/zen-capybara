@@ -1,0 +1,10 @@
+name: 测试权限
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "GitHub Actions 权限测试通过！🦫"
